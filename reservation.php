@@ -5,9 +5,14 @@
     <title>Reservation</title>
     <script src="reservation.js"></script>
     <link rel="stylesheet" href="reservation.css">
+    <script src="https://kit.fontawesome.com/e742385434.js" crossorigin="anonymous"></script>
 </head>
 <body>
+        <div class="home">
+            <a href="index.php"><i class="fas fa-home"></i></a>
+        </div>
     <header>
+        <h1>Filme</h1>
         <h1>Reservation</h1>
     </header>
     <main>

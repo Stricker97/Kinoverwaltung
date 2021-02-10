@@ -22,6 +22,7 @@
         </nav>
     </header>
     <main>
+        <p>Erfolgreich eingeloggt</p>
         <p>Welcome to CineLucas</p>
     </main>
 </body>

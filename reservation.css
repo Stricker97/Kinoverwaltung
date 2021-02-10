@@ -80,3 +80,16 @@ button{
     margin: 10vh;
     font-size: 2rem;
 }
+
+.home{
+    position: absolute;
+    z-index:100;
+}
+
+a{
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    margin-left: 2vh;
+}
