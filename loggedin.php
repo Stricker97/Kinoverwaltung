@@ -1,3 +1,12 @@
+<?php
+session_start();
+//$_SESSION["username"] = "lucas";
+//if(isset($_SESSION["uname"])){
+    //echo "Your session is running " . $_SESSION["uname"];
+    print_r($_SESSION);
+
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,21 +17,11 @@
 <body>
     <header>
         <nav>
-            <a href="filmeHinzufuegen.php">Film Hinzufügen</a>
             <a href="filme.php">Filme</a>
             <a href="reservation.php">Reservieren</a>
-            <form action="loginRegister.php" method="POST">
-                <label for="login">Login</label>
-                <select name="login" id="login">
-                    <option value="kunde">Kunde</option>
-                    <option value="admin">Admin</option>
-                </select>
-                <input type="submit" value="Submit">
-            </form>
         </nav>
     </header>
     <main>
-        <p>Erfolgreich eingeloggt</p>
         <p>Welcome to CineLucas</p>
     </main>
 </body>

@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 $sn = "localhost";
 $un = "root";
 $pw = "";
@@ -21,7 +19,6 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()){
     if($pw1 == $row["password"]){
-      $_SESSION['username'] = $un;
       header("location:loggedin.php");
     }else{
       header("location:logininvalid.php");
