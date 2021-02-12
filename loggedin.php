@@ -1,12 +1,6 @@
 <?php
 session_start();
-//$_SESSION["username"] = "lucas";
-//if(isset($_SESSION["uname"])){
-    //echo "Your session is running " . $_SESSION["uname"];
-    print_r($_SESSION);
-
 ?>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +16,7 @@ session_start();
         </nav>
     </header>
     <main>
-        <p>Welcome to CineLucas</p>
+        <p>Welcome <?php echo $_SESSION["username"]?></p>
     </main>
 </body>
 </html>

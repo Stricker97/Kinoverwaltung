@@ -8,7 +8,6 @@ $pw = "";
 $db = "kinoverwaltung";
 $tn = "users";
 
-$un1 = $_POST["un"];
 $pw1 = $_POST["pw"];
 
 $conn = mysqli_connect($sn, $un, $pw, $db);
@@ -16,19 +15,17 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * from $tn WHERE '$un1' = username";
+$sql = "SELECT password from $tn where username = 'admin'";
 $result = $conn->query($sql);
-if ($result->num_rows > 0) {
+if ($result->num_rows > 0){
   while($row = $result->fetch_assoc()){
     if($pw1 == $row["password"]){
-      $_SESSION["username"] = $un1;
-      header("location:loggedin.php");
+      $_SESSION["username"] = "admin";
+      header("location:adminLoggedin.php");
     }else{
-      header("location:logininvalid.php");
+      header("location:adminWrongPw.php");
+        }
     }
-  }
-} else {
-  header("location:logininvalid.php");
 }
 
 $conn->close();

@@ -24,6 +24,7 @@
             <form action="registerConn.php" method="POST">
                 <input type="text" name="fn" placeholder="Vorname">
                 <input type="text" name="ln" placeholder="Nachname">
+                <input type="text" name="un" placeholder="Username">
                 <input type="password" name="pw" placeholder="Passwort">
                 <input type="password" name="pwc" placeholder="Passwort bestätigen">
                 <input type="submit" value="Submit">

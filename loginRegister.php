@@ -1,14 +1,31 @@
+<?php
+if(isset($_POST['login'])){
+    if(!empty($_POST['login'])) {
+        $selected = $_POST['login'];
+        if($selected == 'admin'){
+            header("location:adminLogin.php");
+        }
+    }
+}else{
+    echo "no";
+}
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/e742385434.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="row">
         <div class="column" id="column1">
             <header>
+            <div class="home">
+                <a href="index.php"><i class="fas fa-home"></i></a>
+            </div>
                 <h1>Login</h1>
             </header>
             <form action="loginConn.php" method="POST">

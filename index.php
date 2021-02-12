@@ -8,16 +8,13 @@
 <body>
     <header>
         <nav>
-            <a href="filmeHinzufuegen.php">Film Hinzufügen</a>
-            <a href="filme.php">Filme</a>
-            <a href="reservation.php">Reservieren</a>
             <form action="loginRegister.php" method="POST">
                 <label for="login">Login</label>
                 <select name="login" id="login">
                     <option value="kunde">Kunde</option>
                     <option value="admin">Admin</option>
                 </select>
-                <input type="submit" value="Submit">
+                <input type="submit" value="&#10003">
             </form>
         </nav>
     </header>

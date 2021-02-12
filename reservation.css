@@ -93,3 +93,20 @@ a{
     color: white;
     margin-left: 2vh;
 }
+
+form{
+    align-items: center;
+    text-align: center;
+}
+
+input{
+    margin: 2.5vh;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+}
+
+input:hover, input:focus{
+    transform: scale(1.25);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 2);
+}
